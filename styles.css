@@ -8,11 +8,16 @@
     --grey: #464547;
 }
 
+@font-face {
+    font-family: Abyssal;
+    src: url('Abyssal.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Abyssal';
 }
 
 body {
