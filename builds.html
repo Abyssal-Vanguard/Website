@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Gallery | Abyssal Vanguard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">Abyssal Vanguard</a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="builds.html" class="active">Builds</a></li>
+                <li><a href="index.html#contact" class="btn-cta">Get Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>The <span>Armory</span></h1>
+        <p>Check out our latest creations. Filter by category below.</p>
+    </section>
+
+    <!-- Gallery with Filters -->
+    <section id="portfolio">
+
+        <!-- Filter Buttons -->
+        <div class="filter-container hidden">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="gaming">Gaming</button>
+            <button class="filter-btn" data-filter="workstation">Workstation</button>
+            <button class="filter-btn" data-filter="water">Water Cooled</button>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="gallery-grid">
+
+            <!-- Item 1: Gaming -->
+            <div class="gallery-item hidden" data-category="gaming">
+                <img src="assets/computerbuild1.png" alt="Gaming PC">
+                <div class="gallery-text">Wanginator X3 (Gaming)</div>
+            </div>
+
+            <!-- Item 2: Workstation -->
+            <div class="gallery-item hidden" data-category="workstation">
+                <!-- Use a different image if you have one, reusing assets for demo -->
+                <img src="assets/computerbuild2.jpeg" alt="Workstation">
+                <div class="gallery-text">Video Edit Pro (Workstation)</div>
+            </div>
+
+            <!-- Item 3: Water Cooled -->
+            <div class="gallery-item hidden" data-category="water">
+                <img src="assets/computerbuild1.png" alt="Water Cooled">
+                <div class="gallery-text">Abyssal Leviathan (Liquid)</div>
+            </div>
+
+             <!-- Item 4: Gaming -->
+             <div class="gallery-item hidden" data-category="gaming">
+                <img src="assets/computerbuild2.jpeg" alt="Gaming Setup">
+                <div class="gallery-text">Neon Striker (Gaming)</div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Abyssal Vanguard LLC. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

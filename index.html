@@ -1,67 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & Social Sharing Info -->
+    <meta name="description"
+        content="Abyssal Vanguard: Custom High-Performance Gaming PCs, IT Consulting, and Repairs. Built for the future.">
+    <meta name="keywords" content="Custom PC, Gaming Computer, PC Building, IT Consulting, Computer Repair">
+    <meta name="author" content="Abyssal Vanguard">
+    <meta property="og:title" content="Abyssal Vanguard | Tech Innovation">
+    <meta property="og:description" content="High-performance custom PCs and IT solutions. Get your quote today.">
+    <meta property="og:image" content="assets/computerbuild1.png">
+    <meta property="og:type" content="website">
+
     <title>Abyssal Vanguard | Tech Innovation</title>
+
+    <!-- CSS (In the root folder) -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="logo">Abyssal Vanguard</div>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
         <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#builds">Builds</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul id="nav-list">
+                <li><a href="#reviews">Reviews</a></li> <!-- Updated Link -->
+                <li><a href="services.html">Services</a></li>
+                <li><a href="builds.html">Builds</a></li>
+                <li><a href="#contact" class="btn-cta">Get Started</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <h1> High-Performing. Cost-Efficient.<br><span>Custom PCs & Services</span></h1>
-        <p>Whether you need a water-cooled gaming beast, enterprise IT consulting, or hardware repair, we build the future you need.</p>
+        <h1>High-Performing. Cost-Efficient.<br><span>Custom PCs & Services</span></h1>
+        <!-- Added ID 'typewriter-text' for the JS animation -->
+        <p id="typewriter-text">Whether you need a water-cooled gaming beast, enterprise IT consulting, or hardware
+            repair, we build the future you need.</p>
         <a href="#builds" class="btn-cta" style="margin-top:20px;">Our Builds</a>
     </section>
 
     <!-- Services Section -->
     <section id="services">
-        <h2 class="section-title">Our Services</h2>
+        <h2 class="section-title hidden">Our Services</h2>
         <div class="services-grid">
-            <!-- Service 1 -->
-            <div class="card">
+            <div class="card hidden">
                 <h3>Custom PC Builds</h3>
-                <p>Need a PC? We can help you with a custom build, whether you're new to the scene or a seasoned gamer. Not only are our computers tailored to your needs, we offer lower prices than all of our competitors.</p>
+                <p>Need a PC? We can help you with a custom build, whether you're new to the scene or a seasoned gamer.
+                    Not only are our computers tailored to your needs, we offer lower prices than all of our
+                    competitors.</p>
             </div>
-            <!-- Service 2 -->
-            <div class="card">
+            <div class="card hidden">
                 <h3>Free Consulting</h3>
-                <p>If you're curious about what a computer could look like for you, shoot us an email and we'll give you a free consultation on what parts would fit you best.</p>
+                <p>If you're curious about what a computer could look like for you, shoot us an email and we'll give you
+                    a free consultation on what parts would fit you best.</p>
             </div>
-            <!-- Service 3 -->
-            <div class="card">
+            <div class="card hidden">
                 <h3>Repair & Upgrades</h3>
-                <p>If your computer isn't running as well as when we first build it, bring it over and we'll fix it, free of charge.</p>
+                <p>If your computer isn't running as well as when we first build it, bring it over and we'll fix it,
+                    free of charge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews">
+        <h2 class="section-title hidden">Client Intel</h2>
+        <div class="reviews-grid">
+            <div class="review-card hidden">
+                <div class="stars">★★★★★</div>
+                <p>"Abyssal Vanguard built me a rig that runs Cyberpunk 2077 at max settings. The cable management is
+                    art."</p>
+                <span>- Name.</span>
+            </div>
+            <div class="review-card hidden">
+                <div class="stars">★★★★★</div>
+                <p>"My office needed a server upgrade on a budget. They delivered under cost and faster than expected."
+                </p>
+                <span>- Name, CEO</span>
+            </div>
+            <div class="review-card hidden">
+                <div class="stars">★★★★★</div>
+                <p>"Brought my dead laptop in, and they had it running better than new in 24 hours. Highly recommend."
+                </p>
+                <span>- Name</span>
+            </div>
+            <div class="review-card hidden">
+                <div class="stars">★★★★★</div>
+                <p>"My E-sports team needed a custom build for tournaments. They delivered a beast that won us the
+                    championship."</p>
+                <span>- Name</span>
             </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
     <section id="builds">
-        <h2 class="section-title">Recent Builds</h2>
+        <h2 class="section-title hidden">Recent Builds</h2>
         <div class="gallery">
-            <!-- Placeholder Images - Replace src with your own images later -->
-            <div class="gallery-item">
-                <img src="assets\computerbuild1.png" alt="Gaming PC">
+            <div class="gallery-item hidden">
+                <img src="assets/computerbuild1.png" alt="Gaming PC">
                 <div class="gallery-text">Daniel X3 - Gaming Rig</div>
             </div>
-            <div class="gallery-item">
-                <img src="assets\daniel_dad.jpeg" alt="Satisfied Customer">
+            <div class="gallery-item hidden">
+                <img src="assets/daniel_dad.jpeg" alt="Satisfied Customer">
                 <div class="gallery-text">Satisfied Customer</div>
             </div>
-            <div class="gallery-item">
-                <img src="assets\computerbuild2.jpeg" alt="Components">
+            <div class="gallery-item hidden">
+                <img src="assets/computerbuild2.jpeg" alt="Components">
                 <div class="gallery-text">Internal View</div>
             </div>
         </div>
@@ -69,19 +127,20 @@
 
     <!-- Contact Form -->
     <section id="contact">
-        <h2 class="section-title">Start Your Project</h2>
-        <form>
+        <h2 class="section-title hidden">Start Your Project</h2>
+        <!-- REPLACE 'ACTION_URL_HERE' with your Formspree link -->
+        <form action="https://formspree.io/f/ACTION_URL_HERE" method="POST" class="hidden">
             <div class="form-group">
                 <label>Name</label>
-                <input type="text" placeholder="Your Name">
+                <input type="text" name="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
                 <label>Email</label>
-                <input type="email" placeholder="your@email.com">
+                <input type="email" name="email" placeholder="your@email.com" required>
             </div>
             <div class="form-group">
                 <label>Interest</label>
-                <select>
+                <select name="service">
                     <option>Custom PC Build</option>
                     <option>IT Consulting</option>
                     <option>Repair/Maintenance</option>
@@ -90,7 +149,8 @@
             </div>
             <div class="form-group">
                 <label>Message</label>
-                <textarea rows="5" placeholder="Let us know your needs and budget..."></textarea>
+                <textarea name="message" rows="5" placeholder="Let us know your needs and budget..."
+                    required></textarea>
             </div>
             <button type="submit" class="btn-cta" style="width:100%">Request Quote</button>
         </form>
@@ -100,5 +160,8 @@
         <p>&copy; 2025 Abyssal Vanguard LLC. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript Link -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
