@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- SEO & Social Sharing Info -->
-    <meta name="description"
-        content="Abyssal Vanguard: Custom High-Performance Gaming PCs, IT Consulting, and Repairs. Built for the future.">
+    <meta name="description" content="Abyssal Vanguard: Custom High-Performance Gaming PCs, IT Consulting, and Repairs. Built for the future.">
     <meta name="keywords" content="Custom PC, Gaming Computer, PC Building, IT Consulting, Computer Repair">
     <meta name="author" content="Abyssal Vanguard">
     <meta property="og:title" content="Abyssal Vanguard | Tech Innovation">
@@ -16,29 +14,20 @@
     <meta property="og:type" content="website">
 
     <title>Abyssal Vanguard | Tech Innovation</title>
-
-    <!-- CSS (In the root folder) -->
+    
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
     <header>
         <div class="logo">Abyssal Vanguard</div>
-
-        <!-- Hamburger Icon for Mobile -->
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
         <nav>
             <ul id="nav-list">
-                <li><a href="#reviews">Reviews</a></li> <!-- Updated Link -->
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="builds.html">Builds</a></li>
-                <li><a href="#contact" class="btn-cta">Get Started</a></li>
+                <li><a href="#contact" class="btn-cta">Get Quote</a></li>
             </ul>
         </nav>
     </header>
@@ -46,10 +35,11 @@
     <!-- Hero Section -->
     <section id="hero">
         <h1>High-Performing. Cost-Efficient.<br><span>Custom PCs & Services</span></h1>
-        <!-- Added ID 'typewriter-text' for the JS animation -->
-        <p id="typewriter-text">Whether you need a water-cooled gaming beast, enterprise IT consulting, or hardware
-            repair, we build the future you need.</p>
-        <a href="#builds" class="btn-cta" style="margin-top:20px;">Our Builds</a>
+        
+        <!-- UPDATE: Added data-page="home" for random text logic -->
+        <p id="typewriter-text" data-page="home"></p>
+        
+        <a href="builds.html" class="btn-cta" style="margin-top:20px;">Our Builds</a>
     </section>
 
     <!-- Services Section -->
@@ -58,19 +48,15 @@
         <div class="services-grid">
             <div class="card hidden">
                 <h3>Custom PC Builds</h3>
-                <p>Need a PC? We can help you with a custom build, whether you're new to the scene or a seasoned gamer.
-                    Not only are our computers tailored to your needs, we offer lower prices than all of our
-                    competitors.</p>
+                <p>Need a PC? We can help you with a custom build, whether you're new to the scene or a seasoned gamer. Not only are our computers tailored to your needs, we offer lower prices than all of our competitors.</p>
             </div>
             <div class="card hidden">
                 <h3>Free Consulting</h3>
-                <p>If you're curious about what a computer could look like for you, shoot us an email and we'll give you
-                    a free consultation on what parts would fit you best.</p>
+                <p>If you're curious about what a computer could look like for you, shoot us an email and we'll give you a free consultation on what parts would fit you best.</p>
             </div>
             <div class="card hidden">
                 <h3>Repair & Upgrades</h3>
-                <p>If your computer isn't running as well as when we first build it, bring it over and we'll fix it,
-                    free of charge.</p>
+                <p>If your computer isn't running as well as when we first build it, bring it over and we'll fix it, free of charge.</p>
             </div>
         </div>
     </section>
@@ -81,27 +67,18 @@
         <div class="reviews-grid">
             <div class="review-card hidden">
                 <div class="stars">★★★★★</div>
-                <p>"Abyssal Vanguard built me a rig that runs Cyberpunk 2077 at max settings. The cable management is
-                    art."</p>
-                <span>- Name.</span>
+                <p>"Abyssal Vanguard built me a rig that runs Cyberpunk 2077 at max settings. The cable management is art."</p>
+                <span>- Alex R.</span>
             </div>
             <div class="review-card hidden">
                 <div class="stars">★★★★★</div>
-                <p>"My office needed a server upgrade on a budget. They delivered under cost and faster than expected."
-                </p>
-                <span>- Name, CEO</span>
+                <p>"My office needed a server upgrade on a budget. They delivered under cost and faster than expected."</p>
+                <span>- Sarah Jenkins, CEO</span>
             </div>
             <div class="review-card hidden">
                 <div class="stars">★★★★★</div>
-                <p>"Brought my dead laptop in, and they had it running better than new in 24 hours. Highly recommend."
-                </p>
-                <span>- Name</span>
-            </div>
-            <div class="review-card hidden">
-                <div class="stars">★★★★★</div>
-                <p>"My E-sports team needed a custom build for tournaments. They delivered a beast that won us the
-                    championship."</p>
-                <span>- Name</span>
+                <p>"Brought my dead laptop in, and they had it running better than new in 24 hours. Highly recommend."</p>
+                <span>- Daniel M.</span>
             </div>
         </div>
     </section>
@@ -128,7 +105,6 @@
     <!-- Contact Form -->
     <section id="contact">
         <h2 class="section-title hidden">Start Your Project</h2>
-        <!-- REPLACE 'ACTION_URL_HERE' with your Formspree link -->
         <form action="https://formspree.io/f/ACTION_URL_HERE" method="POST" class="hidden">
             <div class="form-group">
                 <label>Name</label>
@@ -149,8 +125,7 @@
             </div>
             <div class="form-group">
                 <label>Message</label>
-                <textarea name="message" rows="5" placeholder="Let us know your needs and budget..."
-                    required></textarea>
+                <textarea name="message" rows="5" placeholder="Let us know your needs and budget..." required></textarea>
             </div>
             <button type="submit" class="btn-cta" style="width:100%">Request Quote</button>
         </form>
@@ -159,9 +134,13 @@
     <footer>
         <p>&copy; 2025 Abyssal Vanguard LLC. All Rights Reserved.</p>
     </footer>
-
-    <!-- JavaScript Link -->
-    <script src="js/script.js"></script>
+    <!-- RGB Theme Switcher -->
+    <div class="theme-switch-container">
+        <div class="theme-btn" data-color="#8b5cf6" style="background:#8b5cf6;"></div> <!-- Purple -->
+        <div class="theme-btn" data-color="#00d4ff" style="background:#00d4ff;"></div> <!-- Cyan -->
+        <div class="theme-btn" data-color="#39ff14" style="background:#39ff14;"></div> <!-- Neon Green -->
+        <div class="theme-btn" data-color="#ff003c" style="background:#ff003c;"></div> <!-- Cyber Red -->
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>

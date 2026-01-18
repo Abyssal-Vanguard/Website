@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- Header (Updated Links) -->
+    <!-- Header -->
     <header>
         <a href="index.html" class="logo">Abyssal Vanguard</a>
         <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
@@ -23,10 +23,11 @@
         </nav>
     </header>
 
-    <!-- Page Header -->
+    <!-- Page Header (Typewriter is here) -->
     <section class="page-header">
         <h1>Our <span>Services</span></h1>
-        <p>Transparent pricing. No hidden fees. Maximum performance.</p>
+        <!-- This is where the text will type out -->
+        <p id="typewriter-text" data-page="services"></p>
     </section>
 
     <!-- Pricing Section -->
@@ -62,7 +63,7 @@
                     <li>AIO Watercooling Install</li>
                     <li>Overclocking & Stability Tests</li>
                     <li>30-Day Support</li>
-                    <li>Everthing in Entry</li>
+                    <li>Everything in Entry</li>
                 </ul>
                 <a href="index.html#contact" class="btn-cta">Choose Pro</a>
             </div>
@@ -86,17 +87,58 @@
             <!-- Tier 4 -->
             <div class="pricing-card hidden">
                 <h3>Consulting</h3>
-                <span class="price">FREE!!<span>+ Labor</span></span>
-                <p>Free Consulting so your can find the build you need </p>
+                <span class="price">FREE!!<span></span></span>
+                <p>Free consulting so you can find the build you need.</p>
                 <ul class="pricing-features">
-                    <li>E-mailing</li>
+                    <li>E-mailing Support</li>
                     <li>Hardware Recommendations</li>
-                    <li>Building advice</li>
+                    <li>Building Advice</li>
+                    <li>Budget Planning</li>
                 </ul>
                 <a href="index.html#contact" class="btn-cta">Get Consulted</a>
+            </div>
+
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2 class="section-title hidden">Common Intel (FAQ)</h2>
+        <div class="faq-container">
+
+            <div class="faq-item hidden">
+                <div class="faq-question">
+                    <h3>How long does a custom build take?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Standard builds typically take 5-7 business days once parts arrive. Custom water-cooled loops or "God Tier" builds may take 2-3 weeks due to extensive leak testing and optimization.</p>
+                </div>
+            </div>
+
+            <div class="faq-item hidden">
+                <div class="faq-question">
+                    <h3>Do you offer a warranty?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer a lifetime labor warranty on all builds. If a loose cable or assembly error causes issues, we fix it free. Component warranties are handled via the original manufacturers (MSI, ASUS, etc.), but we can assist with the RMA process.</p>
+                </div>
+            </div>
+
+            <div class="faq-item hidden">
+                <div class="faq-question">
+                    <h3>Can I bring my own parts?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. If you already bought a GPU or Case, bring it in! We will adjust the build fee accordingly based on how much assembly is required.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
     <!-- Repair List -->
     <section id="repairs">
         <h2 class="section-title hidden">Repair & Maintenance</h2>
@@ -121,8 +163,14 @@
 
     <footer>
         <p>&copy; 2025 Abyssal Vanguard LLC. All Rights Reserved.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+    </footer
+        <!-- RGB Theme Switcher -->
+        <div class="theme-switch-container">
+            <div class="theme-btn" data-color="#8b5cf6" style="background:#8b5cf6;"></div> <!-- Purple -->
+            <div class="theme-btn" data-color="#00d4ff" style="background:#00d4ff;"></div> <!-- Cyan -->
+            <div class="theme-btn" data-color="#39ff14" style="background:#39ff14;"></div> <!-- Neon Green -->
+            <div class="theme-btn" data-color="#ff003c" style="background:#ff003c;"></div> <!-- Cyber Red -->
+        </div>
+    <script src="script.js"></script>
 </body>
 </html>
